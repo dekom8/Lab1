@@ -21,6 +21,7 @@ body{
 	background: #dee8fb;
 	width: 327px;
 	min-width: 327px;
+	text-align: center;
 }
 
 .two{
@@ -30,7 +31,7 @@ body{
 }
 
 .three{
-	background: black;
+	background: pink;
 	width: 35%;
 	text-align: center;
 	display: flex;
