@@ -18,20 +18,20 @@ body{
 }
 
 .one{
-	background: #dee8fb;
+	background: #fdfae9;
 	width: 327px;
 	min-width: 327px;
 	text-align: center;
 }
 
 .two{
-	background: orange;
+	background: #f2f0e4;
 	width: 100%;
-	text-align: right; 	
+	text-align: right; 
 }
 
 .three{
-	background: pink;
+	background: #f8d8af;
 	width: 35%;
 	text-align: center;
 	display: flex;
@@ -40,31 +40,32 @@ body{
 }
 
 .four{
-	background: yellow;
+	background: #efe7d0;
 	width: 65%;
 }
 
 .five{
-	background: grey;
+	background: #f4e5bc;
 	width: 65%;
 }
 
 .six{
-	background: #366bd0;
+	background: #fee2cd;
 	width: 35%;
-	text-align: center;
+	text-align: center;	
+
 }
 
 .seven{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	background: green;
+	background: #fbdae5;
 	width: 100%;
+	text-align: left;
 }
 
 img{
 	box-sizing: border-box;
+	width: 100%;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.2);
 }
 
 .line1, .line2, .line3, .line4, .center{
@@ -73,7 +74,7 @@ img{
 	justify-content: space-around;
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 860px){
 	.line1{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -83,7 +84,7 @@ img{
 		min-width: 327px;
 	}
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
 	.line2, .line3, .line4{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
