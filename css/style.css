@@ -21,7 +21,6 @@ body{
 	background: #fdfae9;
 	width: 327px;
 	min-width: 327px;
-	text-align: center;
 }
 
 .two{
@@ -53,7 +52,6 @@ body{
 	background: #fee2cd;
 	width: 35%;
 	text-align: center;	
-
 }
 
 .seven{
@@ -74,7 +72,11 @@ img{
 	justify-content: space-around;
 }
 
-@media screen and (max-width: 860px){
+h2{
+	text-align: center;
+}
+
+@media screen and (max-width: 850px){
 	.line1{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -84,6 +86,7 @@ img{
 		min-width: 327px;
 	}
 }
+
 @media screen and (max-width: 1000px){
 	.line2, .line3, .line4{
 		-webkit-flex-direction: column;
@@ -94,14 +97,14 @@ img{
 		min-width: 327px;
 	}
 
-	.one{
-		max-width: 327px;
-	}
-
 	.center{
 		display:flex;
      	align-items: center;
 	}
+
+	.one{
+	max-width: 327px;
+	} 
 
 	img{ 
 		width: 50%;
