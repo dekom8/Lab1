@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ColorFlow</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="static/img/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Playball|Damion' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="first.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+    <script src="first.js"></script>
+
+</head>
+
+<body>
+
+  <div class="chevronDown">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </div>
+
+  <div style="text-align:center">
+    <h1><span style="cursor:pointer" onclick="link()">ColorFlow</span></h1>
+    <p><span class="github" onclick="link()">Push on the text to see the next jquery animation</span></p>
+  </div>
+
+
+  <script>
+      $('body').colorFlow({
+          background: ['#85144b', '#F012BE', '#FFBC00', '#7FDBFF', '#01FF70'],
+          text: ['#CF5D94', '#EFA9FA', '#665800', '#004966', '#00662C'],
+          time: 25
+      });
+  </script>
+
+  <script>
+    function link(){
+        window.location.assign("second.html")
+    }
+  </script>
+
+  <script>(function chevronDownloop() {
+    $('.chevronDown').animate({'bottom': '30'}, { //.animate takes 2 args: direction, distance in px
+        duration: 1000, //duration is ms 
+        complete: function() {
+            $('.chevronDown').animate({bottom: 0}, {
+                duration: 1000, 
+                complete: chevronDownloop});
+        }});
+})();
+</script>
+  
+</body>
+</html>
