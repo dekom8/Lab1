@@ -1,0 +1,9 @@
+language: generic
+deploy:
+  provider: s3
+  access_key_id: AKIAISVCZAR47ZLEEGTQ 
+  secret_access_key: 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
+  bucket: git-to-amazon-s3-outputbucket-2d1porueald1
+  on:
+    repo: dekom8/Lab2
+acl: public_read
