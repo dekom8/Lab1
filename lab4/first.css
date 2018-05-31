@@ -1,0 +1,64 @@
+body {
+	font-family:'Damion'!important
+}
+
+.chevronDown{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 80px;
+}
+
+h1 { 
+	font-family:"Playball"!important;
+	font-weight:400;
+	font-size:70px;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.45);
+	margin-bottom:-20px
+}
+
+.github {
+	font-size:23px;
+	cursor:pointer
+}
+
+@media (min-width:1920px) {
+	h1 {
+		font-size:135px!important
+	}
+
+	.github {
+		font-size:23px!important
+	}
+}
+
+@media (min-width:1280px) {
+	h1 {
+		font-size:95px
+	}
+
+	.github {
+		font-size:15px
+	}
+}
+
+@media (max-width:570px) {
+	h1 {
+		font-size:55px
+	}
+
+	.github {
+		font-size:12px
+	}
+}
+
+@media (max-width:400px) {
+	h1 {
+		font-size:55px
+	}
+
+	.github {
+		font-size:12px
+	}
+}
